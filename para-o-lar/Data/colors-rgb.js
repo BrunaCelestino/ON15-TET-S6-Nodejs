@@ -149,3 +149,15 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+obj.forEach(elemento => {
+    let cor = elemento
+
+    for(valor in cor){
+        console.log(`${valor} RGB: ${cor[valor]}`)
+    }
+});
+
+
+
+

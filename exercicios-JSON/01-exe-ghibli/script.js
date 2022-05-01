@@ -26,6 +26,13 @@ const jsonDeFilmes = [
 //Apresente no console cada um dos atributos desse JS
 // COMEÇA O EXERCÍCIO
 
+jsonDeFilmes.forEach(filme => {
+  console.log(`Titulo: ${filme.title}`)
+  console.log(`Descrição: ${filme.description}`)
+  
+});
+
+
 
 
   
