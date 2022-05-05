@@ -150,10 +150,15 @@ const obj = [{
     "rebeccapurple": [102, 51, 153, 1]
 }]
 
-obj.forEach(elemento => {
-    let cor = elemento
 
-    for(valor in cor){
-        console.log(`${valor} RGB: ${cor[valor]}`);
+for (let i = 0; i < obj.length; i++) {
+    let nome = Object.keys(obj[i]);
+    let valor = Object.values(obj[i]);
+
+    for (let j = 0; j < valor.length, j < nome.length; j++) {
+
+        console.log(`${nome[j]} RGB: ${valor[j]}`);
+
+
     }
-});
+}

@@ -76,17 +76,18 @@ const obj = [
     }
 ]
 
-obj.forEach(filme => {
+for (let i = 0; i < obj.length; i++) {
+    console.log(`Titulo: ${obj[i].Title}`)
+    console.log(`Ano: ${obj[i].Year}`)
 
-    console.log(`Titulo: ${filme.Title}`)
-    console.log(`Ano: ${filme.Year}`)
-
-    let tipo = filme.Genre
+    let tipo = obj[i].Genre
     let tipoArray = tipo.split(", ")
-    tipoArray.forEach(genero => {
 
-        console.log(genero)
-    })
+    for (let j = 0; j < tipoArray.length; j++) {
+        console.log(tipoArray[j])
+    }
+}
 
-});
+
+
 
